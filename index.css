@@ -1,0 +1,373 @@
+body{
+  padding: 0;
+  margin: 0;
+  /* background: url(/Images/Homepage-Model-Y-Global-Desktop.jpeg)
+  no-repeat center fixed;
+  background-size: cover; */
+}
+ 
+header{
+  /* border: 2px solid black; */
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0,0,0,.6);
+  z-index: 5;
+}
+
+nav{
+  flex: 100%;
+  display: flex;
+}
+
+.one{
+  /* border:2px solid red; */
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* opacity: .7; */
+  width: auto;
+}
+
+.one svg{
+  width: 40%;
+  color: white;
+}
+
+.one a{
+  /* border: 2px solid orangered; */
+  display: flex;  
+  justify-content: center;
+}
+
+.two{
+  /* border:2px solid blue; */
+  flex: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  /* font-family: 'Bruno Ace SC', cursive; */
+}
+
+.two ul{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  /* opacity: .7; */
+}
+
+.two ul li{
+  /* border: 2px solid black; */
+  display: block;
+}
+
+.two ul li a{
+  /* border: 2px solid palevioletred; */
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  border-radius: 5px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color .40s ease;
+  position: relative;
+  font-weight: bold;
+  padding: 5px 5px;
+}
+
+.two ul li a:hover{
+  background-color: rgba(255,255,255,.3);
+}
+
+.two ul li a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: .4s ease-in-out;
+  background-color: rgba(255,255,255,.7);
+}
+
+.two ul li a:hover:before{
+  width: 100%;
+}
+
+.three{
+  /* border:2px solid rgb(21, 255, 0); */
+  flex: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.three ul{
+  /* border: 2px solid yellow; */
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  /* opacity: .7; */
+}
+
+.three ul li{
+  /* border: 2px solid black; */
+  display: block;
+}
+
+.three ul li a{
+  /* border: 2px solid palevioletred; */
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 10px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  position: relative;
+  font-weight: bold;
+  padding: 5px 5px;
+  transition: background-color .40s ease;
+}
+
+.three ul li a:hover{
+  background-color: rgba(255,255,255,.3);
+}
+
+.three ul li a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: .4s ease-in-out;
+  background-color: rgba(255,255,255,.7);
+}
+
+.three ul li a:hover:before{
+  width: 100%;
+}
+
+
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(70%);
+} 
+
+.btn .demo0{
+  border: 2px solid white;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  left: 50%;
+  width: 20%;
+  bottom: 10%;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+.model .btn .demo0:hover{
+  background-color: transparent;
+}
+
+img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+} 
+
+.model h5{
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translateX(-50%);
+  /* font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.model h5 a{
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+.model h5 a:hover{
+  background-color: "";
+}
+
+.model{
+  position: relative;
+  /* z-index: -4; */
+  margin-bottom: -3.7px;  
+}
+.model h1{
+  position: absolute;
+  top: 10%;
+  left:50%;
+  transform: translateX(-50%);
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.model h4{
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translateX(-50%);
+  /* font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  opacity: .8;
+}
+
+.btn .order{
+  border: 2px solid red;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(23, 26, 32, 0.8);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  left: 38%;
+  width: 20%;
+  bottom: 10%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+.model .btn .order:hover{
+  background-color:""
+}
+
+.btn .demo{
+  border: 2px solid red;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  font-size: 16px;
+  padding: 10px 20px;
+  left: 62%;
+  width: 20%;
+  bottom: 10%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+.model .btn .demo:hover{
+  background-color:""
+}
+
+footer{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.foot{
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+.foot ul{
+  display: flex;
+  flex-flow: wrap row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.foot ul li{
+  /* border: 2px solid black; */
+  display: block;
+}
+
+.foot ul li a{
+  /* border: 2px solid red; */
+  display: block;
+  flex-wrap: wrap;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  /* transition: background-color .40s ease; */
+  opacity: .7;
+  position: relative;
+  padding: 5px 5px;
+}
+
+.foot ul li a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;  
+  transition: .4s ease-in-out;
+  background-color: rgba(0,0,0,.9);
+}
+
+.foot ul li a:hover:before{
+  width: 100%;
+}
+
+

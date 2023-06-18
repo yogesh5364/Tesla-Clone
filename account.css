@@ -1,0 +1,287 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    /* background: url()
+    no-repeat center fixed;
+    background-size: cover;  */
+}
+   
+header{
+    /* border: 2px solid black; */
+    position: sticky;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+    flex: 100%;
+    display: flex;   
+}
+
+.one{
+    /* border:2px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    /* opacity: .7; */
+    /* padding-top: 10px; */
+}
+
+.one svg{
+    width: 40%;
+    color: black;
+}
+
+.one a{
+    /* border: 2px solid orangered; */
+    display: flex;  
+    justify-content: center;
+}
+
+.two{
+    /* border:2px solid blue; */
+    flex: 60%;
+    display: flex;
+}
+
+.lang{
+    /* border: 2px solid darkblue; */
+    display: flex;
+    flex: 20%;
+    flex-flow: wrap;
+    justify-content: end;
+    padding: 30px;
+    margin: 0;
+    font-family: 'Bruno Ace SC', cursive;
+    transition: background-color .40s ease;
+}
+
+.material-symbols-outlined {
+    /* border: 2px solid black; */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: black;
+    vertical-align: middle;
+}
+
+.lang .btn{
+    /* border: 2px solid red; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lang .btn:hover{
+    background-color: lightgray;
+}
+
+.lang .btn::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(0,0,0,.9);
+}
+  
+.lang .btn:hover:before{
+    width: 100%;
+}
+
+.account{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.account form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Bruno Ace SC', cursive;
+    opacity: .7;
+}
+
+.account form input{
+    position: relative;
+    /* background-color: whitesmoke; */
+    color: black;
+    font-size: 1.2em;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    height: 35px;
+    width: 350px;
+    border: 1px solid rgb(0, 0, 0,.2);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.account .sign {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.account .sign a{
+    color: black;
+}
+
+.or::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 45%;
+    left: 0;
+    top: 50%;
+    opacity: .3;
+}
+
+.account .or{
+    position: relative;
+    text-align: center;
+}
+
+.or::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 45%;
+    right: 0;
+    top: 50%;
+    opacity: .3;
+}
+
+.account form input:focus{
+    outline: none;
+}
+.account .btn{
+    /* background-color: transparent; */
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    background-color: #3e6ae1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    width: 360px;
+    border: none;
+}
+
+.account .btn:hover{
+    background-color: #6e8eee;
+}
+
+.account .btn1{
+    /* border: 2px solid red; */
+    background-color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    width: 360px;
+    border: 1px solid rgb(0, 0, 0,.5);
+    font-weight: bold;
+    opacity: .7;
+}
+
+.account .btn1:hover{
+    background-color: lightgrey;
+}
+
+footer{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    bottom: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.foot{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.foot ul{
+    display: flex;
+    flex-flow: wrap row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.foot ul li{
+    /* border: 2px solid black; */
+    display: block;
+}
+
+.foot ul li a{
+    /* border: 2px solid red; */
+    display: block;
+    flex-wrap: wrap;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .40s ease;
+    opacity: .7;
+    position: relative;
+}
+
+.foot ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;  
+    transition: .4s ease-in-out;
+    background-color: rgba(0,0,0,.9);
+}
+
+.foot ul li a:hover:before{
+    width: 100%;
+}

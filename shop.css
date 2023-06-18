@@ -1,0 +1,565 @@
+*{box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* background: url(/Images/Homepage-Model-Y-Global-Desktop.jpeg)
+    no-repeat center fixed;
+    background-size: cover; */
+}
+   
+header{
+    /* border: 2px solid blue; */
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,.5);
+}
+  
+nav{
+    flex: 100%;
+    display: flex;
+}
+
+.white{
+    color: white;
+}
+  
+.one{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* opacity: .7; */
+}
+  
+.one svg{
+    width: 50%;
+    color: white;
+}
+
+.one .tesla{
+    /* border: 2px solid orangered; */
+    display: flex; 
+    padding: 20px 0;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 65%;
+    align-items: center;
+}
+
+.one .pipe{
+    /* border:2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+.one .shop{
+    /* border:2px solid green; */
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.shop ul{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* opacity: .7; */
+    align-items: center;
+}
+  
+.shop ul li{
+    /* border: 2px solid pink; */
+    display: block;
+}
+
+.shop ul li a{
+    /* border: 2px solid palevioletred; */
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 5px;
+    transition: background-color .40s ease;
+}
+
+.shop ul li a:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.shop ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255,.7);
+}
+
+.shop ul li a:hover:before{
+    width: 100%;
+}
+
+.two{
+    /* border:2px solid blue; */
+    flex: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.two ul{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* opacity: .7; */
+    align-items: center;
+}
+  
+.two ul li{
+    /* border: 2px solid green; */
+    display: block;
+}
+
+.two ul li a{
+    /* border: 2px solid palevioletred; */
+    display: block;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 5px;
+    transition: background-color .40s ease;
+}
+
+.two ul li a:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.two ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255,.7);
+}
+
+.two ul li a:hover:before{
+    width: 100%;
+}
+
+.three{
+    /* border:2px solid rgb(21, 255, 0); */
+    flex: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.three ul{
+    /* border: 2px solid yellow; */
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    /* opacity: .7; */
+}
+  
+.three ul li{
+    /* border: 2px solid white; */
+    display: block;
+    padding-left: 2px;
+}
+
+.three ul li .white{
+    /* border: 2px solid palevioletred; */
+    text-decoration: none;
+    display: block;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 40px;
+    border-radius: 5px;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 5px;
+    transition: background-color .40s ease;
+}
+
+.three ul li .white:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.three ul li .white::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255,.7);
+}
+  
+.three ul li .white:hover:before{
+    width: 100%;
+}
+
+.three .search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three .line{
+    /* border: 2px solid palevioletred; */
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    /* border: 2px solid red; */
+    color: white;
+    padding-right: 15px;
+    padding-top: 5px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(70%);
+} 
+
+.best{
+    height: 100vh;
+}
+
+.best h2{
+    /* border: 2px solid blue; */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.column {
+    /* border: 2px solid blue; */
+    float: left;
+    width: 33.33%;
+    /* padding: 5px; */
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column a{
+    text-decoration: none;
+    height: 100vh;
+}
+
+.column a h4{
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-left: 25px;
+    color: black;
+    font-size: 20px;
+}
+
+.column img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    /* height: 65vh; */
+    z-index: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.model{
+    /* border: 2px solid blue; */
+    position: relative;
+    /* z-index: -4; */
+    margin-bottom: -3.7px;  
+}
+
+.model img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.model .column1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+}
+
+.model h1{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+}
+
+.model h4{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    /* font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.model h2{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+}
+
+.btn .demo0{
+  border: 2px solid white;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  left: 50%;
+  width: 20%;
+  bottom: 10%;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .model .btn .demo0:hover{
+  background-color: transparent;
+} */
+
+.btn1 .demo1{
+    border: 3px solid black;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    left: 50%;
+    width: 20%;
+    bottom: 10%;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.model .btn1 .demo1:hover{
+    background-color: black;
+    color: white;
+} 
+
+.column1 {
+    float: left;
+    width: 33.33%;
+    /* padding: 5px; */
+    /* margin-left: .050px; */
+}
+  
+/* Clearfix (clear floats) */
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 91vh;
+    width: 98%;
+    padding-top: 4px;
+}
+
+.model h3{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+}
+
+.btn2 .demo2{
+    border: 3px solid black;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    left: 50%;
+    width: 10%;
+    bottom: 7%;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.model .btn2 .demo2:hover{
+    background-color: black;
+    color: white;
+} 
+
+footer{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-top: 12px;
+    margin-bottom: 7px;
+}
+
+.foot{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foot ul{
+    display: flex;
+    flex-flow: wrap row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.foot ul li{
+    /* border: 2px solid black; */
+    display: block;
+}
+
+.foot ul li a{
+    /* border: 2px solid red; */
+    display: block;
+    flex-wrap: wrap;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color .40s ease;
+    opacity: .7;
+    position: relative;
+    padding: 5px 5px;
+}
+
+.foot ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;  
+    transition: .4s ease-in-out;
+    background-color: rgba(0,0,0,.9);
+}
+
+.foot ul li a:hover:before{
+    width: 100%;
+}
